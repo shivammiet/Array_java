@@ -2,14 +2,10 @@ import java.util.*;
 
 import javax.sql.rowset.spi.SyncResolver;
 public class reversearray {
-    private static int temp;
-
-    public static void main(String[] args) {
+   public static void reverse(int arr[]){
         //Scanner sc = new Scanner(System.in);
-        int arr[] = {1,3,4,56,7};
-        int n=arr.length;
         int low=0; 
-        int high =n-1;
+        int high =arr.length-1;
         while(low<high){
           int temp = arr[low];
          arr[low]= arr[high];
@@ -17,8 +13,14 @@ public class reversearray {
          low++;
          high--;
         }
-         for(int i =0; i <arr.length; i++){
+    }
+        public static void main(String args []){
+            int arr[]= {1,3,4,55,4,5};
+
+             reverse(arr);
+            for(int i = 0; i <arr.length; i++){
     System.out.println(arr[i]+ " ");
 }
-}
+
+    }
 }
