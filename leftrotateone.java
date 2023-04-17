@@ -6,6 +6,7 @@ public class leftrotateone {
         arr[i-1] = arr[i];
     }
         arr[n-1] = temp;
+      //  return temp;
     }
 
     public static void main(String args[]) 
